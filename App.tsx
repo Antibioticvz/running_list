@@ -1,19 +1,6 @@
-import React from "react"
-import { StyleSheet, Text, View } from "react-native"
+// export { default } from './storybook';
+import ENV from './env'
+import Hello from './screens/Hello'
+import StorybookUI from './storybook'
 
-export const App: React.FC = () => {
-  return (
-    <View style={styles.container}>
-      <Text>Hello Victor</Text>
-    </View>
-  )
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center"
-  }
-})
+export default ENV.STORYBOOK && __DEV__ ? StorybookUI : Hello 
