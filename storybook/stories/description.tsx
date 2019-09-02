@@ -3,9 +3,15 @@ import React from 'react'
 import Description from '../../components/Description'
 import CenterView from './CenterView'
 
-const stories = storiesOf('Buttons', module)
+const stories = storiesOf('Text input fields', module)
 stories.addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
 
 stories.add('Multiline Description field', () => (
-    <Description />
+    <Description {...{
+      label: 'Description',
+      placeholder: 'What to expect',
+      value: '',
+      onChange: ()=>{},
+    }}
+    />
   ))
