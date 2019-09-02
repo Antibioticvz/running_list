@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextArea test Empty TextArea with title 1`] = `
+Array [
+  <Text
+    marginB-5={true}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+          "textAlign": "left",
+        },
+        Object {
+          "fontFamily": undefined,
+          "fontSize": 17,
+          "fontWeight": "300",
+          "lineHeight": 21,
+        },
+        undefined,
+        Object {
+          "marginBottom": 5,
+        },
+        undefined,
+        undefined,
+      ]
+    }
+    text70={true}
+  >
+    Description
+  </Text>,
+  <View
+    style={
+      Array [
+        undefined,
+        undefined,
+        undefined,
+        Object {},
+        Object {},
+        Object {},
+        Object {
+          "borderColor": "#C2C7CB",
+          "borderWidth": 1,
+          "height": 150,
+          "marginBottom": 10,
+          "padding": 10,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        multiline={true}
+        onChangeText={[Function]}
+        placeholder="What to expect"
+        placeholderTextColor="#C2C7CB"
+        rejectResponderTermination={true}
+        style={
+          Array [
+            Object {
+              "alignItems": "flex-start",
+              "flex": 1,
+              "justifyContent": "flex-start",
+              "textAlignVertical": "top",
+            },
+            Object {
+              "fontFamily": undefined,
+              "fontSize": 17,
+              "fontWeight": "300",
+              "lineHeight": 21,
+            },
+          ]
+        }
+        underlineColorAndroid="transparent"
+        validateOnBlur={true}
+        value=""
+      />
+    </View>
+  </View>,
+]
+`;
+
+exports[`TextArea test TextArea with title and value 1`] = `
+Array [
+  <Text
+    marginB-5={true}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+          "textAlign": "left",
+        },
+        Object {
+          "fontFamily": undefined,
+          "fontSize": 17,
+          "fontWeight": "300",
+          "lineHeight": 21,
+        },
+        undefined,
+        Object {
+          "marginBottom": 5,
+        },
+        undefined,
+        undefined,
+      ]
+    }
+    text70={true}
+  >
+    Description
+  </Text>,
+  <View
+    style={
+      Array [
+        undefined,
+        undefined,
+        undefined,
+        Object {},
+        Object {},
+        Object {},
+        Object {
+          "borderColor": "#C2C7CB",
+          "borderWidth": 1,
+          "height": 150,
+          "marginBottom": 10,
+          "padding": 10,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        multiline={true}
+        onChangeText={[Function]}
+        placeholder="What to expect"
+        placeholderTextColor="#C2C7CB"
+        rejectResponderTermination={true}
+        style={
+          Array [
+            Object {
+              "alignItems": "flex-start",
+              "flex": 1,
+              "justifyContent": "flex-start",
+              "textAlignVertical": "top",
+            },
+            Object {
+              "fontFamily": undefined,
+              "fontSize": 17,
+              "fontWeight": "300",
+              "lineHeight": 21,
+            },
+          ]
+        }
+        underlineColorAndroid="transparent"
+        validateOnBlur={true}
+        value="My Value"
+      />
+    </View>
+  </View>,
+]
+`;

@@ -1,4 +1,3 @@
-
 module.exports = {
     preset: "jest-expo",
     moduleFileExtensions: ['js','jsx','json', 'ts', 'tsx'],
@@ -7,5 +6,5 @@ module.exports = {
     },
     testMatch: [
       "**/*.test.ts?(x)"
-    ]
+    ],
   }
