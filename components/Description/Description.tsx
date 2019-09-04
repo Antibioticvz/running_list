@@ -1,6 +1,5 @@
 import React from 'react'
 import { Colors, Text, TextArea, View } from 'react-native-ui-lib'
-// import { Input } from 'react-native-elements'
       
 interface Props {
     value: string,
@@ -10,7 +9,6 @@ interface Props {
 }
 const INPUT_SPACING = 10
 const Description: React.FC<Props> = ({value, label, placeholder, onChange}) => {
-    // const classes = useStyles()
     return (
       <>
         <Text text70 marginB-5>{label}</Text>
