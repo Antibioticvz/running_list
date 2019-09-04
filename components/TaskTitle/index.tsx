@@ -1,1 +1,2 @@
-export { default } from './TaskTitle';
+export { default as TaskTitle, TaskStatus } from './TaskTitle';
+

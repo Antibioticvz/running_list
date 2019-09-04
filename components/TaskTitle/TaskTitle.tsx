@@ -1,34 +1,44 @@
+import { Ionicons } from '@expo/vector-icons'
 import React from 'react'
 import { View as RView } from 'react-native'
 import { Text } from 'react-native-ui-lib'
+import platformIconPrefix from '../../helpers/platformIconPrefix'
+import styles from './styles'
 
+export enum TaskStatus {
+    active = 'ACTIVE',
+    done = 'DONE',
+    closed = 'CLOSED'
+}
 interface Props {
     title: string,
+    status: TaskStatus,
 }
 
-const TaskTitle: React.FC<Props> = ({title}) => {
+const TaskTitle: React.FC<Props> = ({title, status}) => {
+    const getStatusIcon = (status: TaskStatus) =>{
+        switch (status) {
+            case TaskStatus.active:
+                return <Ionicons name={`${platformIconPrefix()}-radio-button-off`} size={40} color="blue" />
+            case TaskStatus.done:
+                return <Ionicons name={`${platformIconPrefix()}-checkmark-circle-outline`} size={40} color="green" />
+            case TaskStatus.closed:
+                return <Ionicons name={`${platformIconPrefix()}-close-circle-outline`} size={40} color="red" />
+            default:
+                return null
+        }
+    }
     return (
-            <RView style={{
-                flex: 1,
-                flexDirection: 'row',
-                justifyContent: 'space-between',
-                // alignItems: 'center',
-            }}>
-                <RView style={{height: 50, width: '20%', backgroundColor: 'powderblue'}}>
-                    <Text text40>%</Text>
+            <RView style={styles.container}>
+                <RView style={styles.icon}>
+                    { getStatusIcon(status) }
                 </RView>
-                <RView style={{height: 50, width: '80%', backgroundColor: 'skyblue'}} >
-                    <Text text40>{title}</Text>
+                <RView style={styles.title} >
+                    <Text text40 style={styles.titleText}>
+                        {title}
+                    </Text>
                 </RView>
             </RView>
-        // <View row >
-        //     <View left>
-        //         <Text text40>{title}</Text>
-        //     </View>
-        //     <View right>
-        //         <Text text40>{title}</Text>
-        //     </View>
-        // </View>
     )
 }
 
