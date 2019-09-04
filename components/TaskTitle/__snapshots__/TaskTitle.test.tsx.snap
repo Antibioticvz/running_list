@@ -1,0 +1,172 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TaskTitle test Task Title 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "width": "12%",
+      }
+    }
+  >
+    <Text />
+  </View>
+  <View
+    style={
+      Object {
+        "width": "88%",
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "textAlign": "left",
+          },
+          Object {
+            "fontFamily": undefined,
+            "fontSize": 28,
+            "fontWeight": "300",
+            "lineHeight": 33,
+          },
+          undefined,
+          Object {},
+          undefined,
+          Object {
+            "marginRight": "2%",
+            "textAlign": "right",
+          },
+        ]
+      }
+      text40={true}
+    >
+      Done
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`TaskTitle test Task Title 2`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "width": "12%",
+      }
+    }
+  >
+    <Text />
+  </View>
+  <View
+    style={
+      Object {
+        "width": "88%",
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "textAlign": "left",
+          },
+          Object {
+            "fontFamily": undefined,
+            "fontSize": 28,
+            "fontWeight": "300",
+            "lineHeight": 33,
+          },
+          undefined,
+          Object {},
+          undefined,
+          Object {
+            "marginRight": "2%",
+            "textAlign": "right",
+          },
+        ]
+      }
+      text40={true}
+    >
+      Active
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`TaskTitle test Task Title 3`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "width": "12%",
+      }
+    }
+  >
+    <Text />
+  </View>
+  <View
+    style={
+      Object {
+        "width": "88%",
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "textAlign": "left",
+          },
+          Object {
+            "fontFamily": undefined,
+            "fontSize": 28,
+            "fontWeight": "300",
+            "lineHeight": 33,
+          },
+          undefined,
+          Object {},
+          undefined,
+          Object {
+            "marginRight": "2%",
+            "textAlign": "right",
+          },
+        ]
+      }
+      text40={true}
+    >
+      Closed
+    </Text>
+  </View>
+</View>
+`;
